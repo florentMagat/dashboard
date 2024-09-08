@@ -1,0 +1,14 @@
+.custom-arrow {
+    font-size: 3vh;
+    color: #327ccb;
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .custom-next-arrow {
+    right: 1vh;
+  }
+  
+  .custom-prev-arrow {
+    left: 1vh;
+  }
