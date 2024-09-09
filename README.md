@@ -1,50 +1,29 @@
-# React + TypeScript + Vite
+DASHBOARD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![](https://img.shields.io/badge/Typescript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![](https://badges.aleen42.com/src/vitejs.svg)
 
-Currently, two official plugins are available:
+Pour la réalisation de cette application web, j'ai utilisé :
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+   - React
+   - Vite
+   - Typescript
+   - Tailwindcss
 
-## Expanding the ESLint configuration
+   - react-slick
+   - slick-carroussel
+   - chart.js
+   - react-chartjs-2
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Pour la lancer, la procédure est la suivante :
 
-- Configure the top-level `parserOptions` property like this:
+   - `npm i`
+   - `npm run dev`
+   - `http://localhost:5173/`
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+Documents utiles :
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+   - [React 18](https://reactjs.org/)
+   - [TypeScript](https://www.typescriptlang.org/)
+   - [Vite](https://vitejs.dev/)
