@@ -45,7 +45,7 @@ const App: React.FC = () => {
   const [selectedHospitalIndex, setSelectedHospitalIndex] = useState<number>(0);
 
   useEffect(() => {
-    fetch('src/assets/data/data_exemple1_english.JSON')
+    fetch('/data_exemple1_english.JSON')
       .then(response => response.json())
       .then(data => setHospitalData(data))
       .catch(error => console.error('Error fetching data:', error));
