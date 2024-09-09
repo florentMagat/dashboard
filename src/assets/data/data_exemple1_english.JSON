@@ -33,27 +33,27 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
+        "specialty": "Cardiology",
         "numberOfDoctors": 120,
         "satisfactionRate": "89%"
       },
       {
-        "specialty": "Neurologie",
+        "specialty": "Neurology",
         "numberOfDoctors": 80,
         "satisfactionRate": "80%"
       },
       {
-        "specialty": "Oncologie",
+        "specialty": "Oncology",
         "numberOfDoctors": 60,
         "satisfactionRate": "70%"
       },
       {
-        "specialty": "Pédiatrie",
+        "specialty": "Pediatrics",
         "numberOfDoctors": 90,
         "satisfactionRate": "60%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": "General Medicine",
         "numberOfDoctors": 150,
         "satisfactionRate": "90%"
       }
@@ -61,28 +61,28 @@
     "clinicalTrials": [
       {
         "name": "Trial 1",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-01-01",
         "endDate": "2025-06-30",
         "totalPatients": 234
       },
       {
         "name": "Trial 2",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-01-01",
         "endDate": "2023-06-30",
         "totalPatients": 349
       },
       {
         "name": "Trial 3",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-01-01",
         "endDate": "2023-06-30",
         "totalPatients": 1289
       },
       {
         "name": "Trial 4",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-01-01",
         "endDate": "2024-12-30",
         "totalPatients": 978
@@ -90,17 +90,17 @@
     ],
     "hospitalDepartments": [
       {
-        "department": "Urgences",
+        "department": "Emergencies",
         "patientsPerDay": 150,
         "averageWaitTime": "45 min"
       },
       {
-        "department": "Cardiologie",
+        "department": "Cardiology",
         "patientsPerDay": 80,
         "averageWaitTime": "30 min"
       },
       {
-        "department": "Neurologie",
+        "department": "Neurology",
         "patientsPerDay": 60,
         "averageWaitTime": "35 min"
       }
@@ -140,27 +140,27 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
+        "specialty": "Cardiology",
         "numberOfDoctors": 110,
         "satisfactionRate": "87%"
       },
       {
-        "specialty": "Neurologie",
+        "specialty": "Neurology",
         "numberOfDoctors": 75,
         "satisfactionRate": "78%"
       },
       {
-        "specialty": "Oncologie",
+        "specialty": "Oncology",
         "numberOfDoctors": 65,
         "satisfactionRate": "72%"
       },
       {
-        "specialty": "Pédiatrie",
+        "specialty": "Pediatrics",
         "numberOfDoctors": 85,
         "satisfactionRate": "63%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": "General Medicine",
         "numberOfDoctors": 140,
         "satisfactionRate": "88%"
       }
@@ -168,28 +168,28 @@
     "clinicalTrials": [
       {
         "name": "Trial A",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-02-01",
         "endDate": "2025-01-31",
         "totalPatients": 250
       },
       {
         "name": "Trial B",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-02-01",
         "endDate": "2023-07-31",
         "totalPatients": 360
       },
       {
         "name": "Trial C",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-02-01",
         "endDate": "2023-07-31",
         "totalPatients": 1300
       },
       {
         "name": "Trial D",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-02-01",
         "endDate": "2024-11-30",
         "totalPatients": 990
@@ -197,17 +197,17 @@
     ],
     "hospitalDepartments": [
       {
-        "department": "Urgences",
+        "department": "Emergencies",
         "patientsPerDay": 140,
         "averageWaitTime": "50 min"
       },
       {
-        "department": "Cardiologie",
+        "department": "Cardiology",
         "patientsPerDay": 75,
         "averageWaitTime": "25 min"
       },
       {
-        "department": "Neurologie",
+        "department": "Neurology",
         "patientsPerDay": 55,
         "averageWaitTime": "40 min"
       }
@@ -247,27 +247,27 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
+        "specialty": "Cardiology",
         "numberOfDoctors": 115,
         "satisfactionRate": "86%"
       },
       {
-        "specialty": "Neurologie",
+        "specialty": "Neurology",
         "numberOfDoctors": 85,
         "satisfactionRate": "82%"
       },
       {
-        "specialty": "Oncologie",
+        "specialty": "Oncology",
         "numberOfDoctors": 70,
         "satisfactionRate": "75%"
       },
       {
-        "specialty": "Pédiatrie",
+        "specialty": "Pediatrics",
         "numberOfDoctors": 95,
         "satisfactionRate": "65%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": "General Medicine",
         "numberOfDoctors": 145,
         "satisfactionRate": "92%"
       }
@@ -275,28 +275,28 @@
     "clinicalTrials": [
       {
         "name": "Trial X",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-03-01",
         "endDate": "2025-02-28",
         "totalPatients": 270
       },
       {
         "name": "Trial Y",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-03-01",
         "endDate": "2023-08-31",
         "totalPatients": 370
       },
       {
         "name": "Trial Z",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-03-01",
         "endDate": "2023-08-31",
         "totalPatients": 1320
       },
       {
         "name": "Trial W",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-03-01",
         "endDate": "2024-10-31",
         "totalPatients": 1000
@@ -304,17 +304,17 @@
     ],
     "hospitalDepartments": [
       {
-        "department": "Urgences",
+        "department": "Emergencies",
         "patientsPerDay": 160,
         "averageWaitTime": "40 min"
       },
       {
-        "department": "Cardiologie",
+        "department": "Cardiology",
         "patientsPerDay": 85,
         "averageWaitTime": "28 min"
       },
       {
-        "department": "Neurologie",
+        "department": "Neurology",
         "patientsPerDay": 65,
         "averageWaitTime": "32 min"
       }
@@ -354,27 +354,27 @@
     ],
     "doctorSpecialties": [
       {
-        "specialty": "Cardiologie",
+        "specialty": "Cardiology",
         "numberOfDoctors": 100,
         "satisfactionRate": "84%"
       },
       {
-        "specialty": "Neurologie",
+        "specialty": "Neurology",
         "numberOfDoctors": 70,
         "satisfactionRate": "77%"
       },
       {
-        "specialty": "Oncologie",
+        "specialty": "Oncology",
         "numberOfDoctors": 55,
         "satisfactionRate": "71%"
       },
       {
-        "specialty": "Pédiatrie",
+        "specialty": "Pediatrics",
         "numberOfDoctors": 80,
         "satisfactionRate": "62%"
       },
       {
-        "specialty": "Médecine Générale",
+        "specialty": "General Medicine",
         "numberOfDoctors": 130,
         "satisfactionRate": "88%"
       }
@@ -382,28 +382,28 @@
     "clinicalTrials": [
       {
         "name": "Trial M",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-04-01",
         "endDate": "2025-03-31",
         "totalPatients": 280
       },
       {
         "name": "Trial N",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-04-01",
         "endDate": "2023-09-30",
         "totalPatients": 380
       },
       {
         "name": "Trial O",
-        "status": "Terminé",
+        "status": "Ended",
         "startDate": "2023-04-01",
         "endDate": "2023-09-30",
         "totalPatients": 1350
       },
       {
         "name": "Trial P",
-        "status": "En cours",
+        "status": "In progress",
         "startDate": "2023-04-01",
         "endDate": "2024-09-30",
         "totalPatients": 1010
@@ -411,17 +411,17 @@
     ],
     "hospitalDepartments": [
       {
-        "department": "Urgences",
+        "department": "Emergencies",
         "patientsPerDay": 155,
         "averageWaitTime": "42 min"
       },
       {
-        "department": "Cardiologie",
+        "department": "Cardiology",
         "patientsPerDay": 80,
         "averageWaitTime": "33 min"
       },
       {
-        "department": "Neurologie",
+        "department": "Neurology",
         "patientsPerDay": 60,
         "averageWaitTime": "38 min"
       }

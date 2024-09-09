@@ -15,18 +15,18 @@ interface ClinicalTrialsProps {
 
 const formatDate = (dateString: string) => {
   const date = new Date(dateString);
-  return date.toLocaleDateString('fr-FR', {
+  return date.toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-  }).replace(/^1 /, '1er ');
+  });
 }
 
 const ClinicalTrials: React.FC<ClinicalTrialsProps> = ({ trials }) => {
   return (
     <div className="bg-white p-4 text-center rounded-[15px] shadow w-[50vw] max-sm:w-[90vw]">
-      <div className='flex flex-row justify-center items-center gap-[1vw]  mb-[3vh]'>
-        <img src='public/clinical-trials.svg' className='h-[5vh]' />
+      <div className='flex flex-row justify-center items-center gap-[1vw] mb-[3vh] max-sm:block'>
+        <img src='/clinical-trials.svg' className='h-[5vh] max-sm:mx-auto max-sm:mb-3' />
         <h2 className="text-2xl font-bold text-primary">Clinical Trials</h2>
       </div>
       <div className="overflow-x-auto">
@@ -44,7 +44,7 @@ const ClinicalTrials: React.FC<ClinicalTrialsProps> = ({ trials }) => {
             {trials.map((trial, index) => (
               <tr key={index} className="text-primary">
                 <td className="py-2 px-4 border-b font-semibold">{trial.name}</td>
-                <td className="py-2 px-4 border-b">{trial.status === "En cours" ? 
+                <td className="py-2 px-4 border-b">{trial.status === "In progress" ? 
                   <span className="text-orange-500 font-semibold">{trial.status}</span> : 
                   <span className="text-green-600 font-semibold">{trial.status}</span>}
                 </td>

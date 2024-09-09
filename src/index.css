@@ -142,26 +142,23 @@ button:focus-visible {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
-    height: 100vh;
   }
 
   .sidebar {
-    width: 100vw;
-    height: auto;
     position: relative;
+    width: 100%;
+    height: auto;
     top: 0;
     left: 0;
   }
 
   .sidebar_logo {
-    width: 25%;
+    width: 5vh;
     margin-top: 2vh;
   }
 
   .main-content {
     width: 100vw;
-    margin-top: 0;
     margin-left: 0;
-    padding-top: 10vh;
   }
 }

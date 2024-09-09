@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -69,11 +70,32 @@ const getSatisfactionColor = (rate: number) => {
 };
 
 const DoctorSpecialties: React.FC<DoctorSpecialtiesProps> = ({ specialties }) => {
+  const [slidesToShow, setSlidesToShow] = useState(2);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth < 640) {
+        setSlidesToShow(1);
+      } else {
+        setSlidesToShow(2);
+      }
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    // Initial check
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   const settings = {
     infinite: true,
     dots: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: slidesToShow,
     slidesToScroll: 1,
     nextArrow: <NextArrow className="" style={{}} onClick={() => {}} />,
     prevArrow: <PrevArrow className="" style={{}} onClick={() => {}} />,
@@ -81,8 +103,8 @@ const DoctorSpecialties: React.FC<DoctorSpecialtiesProps> = ({ specialties }) =>
 
   return (
     <div className="bg-white p-4 text-center rounded-[15px] shadow w-[50vw] max-sm:w-[90vw]">
-      <div className='flex flex-row justify-center items-center gap-[1vw]  mb-[3vh]'>
-        <img src='public/doctor-specialties.svg' className='h-[5vh]' />
+      <div className='flex flex-row justify-center items-center gap-[1vw] mb-[3vh] max-sm:block'>
+        <img src='/doctor-specialties.svg' className='h-[5vh] max-sm:mx-auto max-sm:mb-3' />
         <h2 className="text-2xl font-bold text-primary">Doctor Specialties</h2>
       </div>
       <div className='pb-[3vh]'>
@@ -93,12 +115,14 @@ const DoctorSpecialties: React.FC<DoctorSpecialtiesProps> = ({ specialties }) =>
             return (
               <div key={index} className="flex flex-col justify-around text-center mb-2 text-primary">
                 <h3 className='mb-2 text-lg'><strong>{specialty.specialty}</strong></h3> 
-                <div className='flex flex-row justify-center gap-[1vw] mb-1'>
+                <div className='flex flex-row justify-center gap-[1vw] mb-1 max-sm:flex-col max-sm:items-center'>
                   <p>{specialty.numberOfDoctors} doctors</p>
-                  <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.5em" viewBox="0 0 50 50"><path fill="currentColor" d="M42.924 13H38V7.774C38 4.038 35.052 1 31.306 1H18.695C14.947 1 12 4.038 12 7.774V13H7.075C3.719 13 1 15.591 1 18.937v23.007C1 45.289 3.719 48 7.075 48h35.849C46.279 48 49 45.289 49 41.943V18.937C49 15.591 46.279 13 42.924 13M16 7.774C16 6.375 17.292 5 18.695 5h12.611C32.705 5 34 6.375 34 7.774V13H16zM36 35h-7v7h-8v-7h-7v-8h7v-7h8v7h7z"/></svg>        
+                  <svg xmlns="http://www.w3.org/2000/svg" width="1.25em" height="1.5em" viewBox="0 0 50 50">
+                    <path fill="currentColor" d="M42.924 13H38V7.774C38 4.038 35.052 1 31.306 1H18.695C14.947 1 12 4.038 12 7.774V13H7.075C3.719 13 1 15.591 1 18.937v23.007C1 45.289 3.719 48 7.075 48h35.849C46.279 48 49 45.289 49 41.943V18.937C49 15.591 46.279 13 42.924 13M16 7.774C16 6.375 17.292 5 18.695 5h12.611C32.705 5 34 6.375 34 7.774V13H16zM36 35h-7v7h-8v-7h-7v-8h7v-7h8v7h7z"/>
+                  </svg>        
                 </div>
-                <div className="flex flex-row items-center justify-center" style={{ color: rateColor }}>
-                  <span className='text-[#327ccb] mr-2'>Satisfaction Rate : {rate}% </span>{getSatisfactionIcon(rate)}
+                <div className="flex flex-row items-center justify-center max-sm:flex-col max-sm:items-center" style={{ color: rateColor }}>
+                  <span className='text-[#327ccb] mr-2 max-sm:mr-0'>Satisfaction Rate : {rate}% </span>{getSatisfactionIcon(rate)}
                 </div>
               </div>
             );

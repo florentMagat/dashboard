@@ -30,7 +30,7 @@ const HospitalizationsChart: React.FC<HospitalizationsChartProps> = ({ data }) =
   return (
     <div className="bg-white p-4 rounded-[15px] shadow text-center flex flex-col items-center w-[50vw] max-sm:w-[90vw]">
       <div className='flex flex-row items-center gap-[1vw] mb-[5vh]'>
-        <img src='public/hospitalizations.svg' className='h-[5vh]' />
+        <img src='/hospitalizations.svg' className='h-[5vh] max-sm:mx-auto' />
         <h2 className="text-2xl font-bold text-primary">Hospitalizations</h2>
       </div>
       <Line data={chartData} />
